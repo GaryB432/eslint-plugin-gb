@@ -8,6 +8,7 @@ My favorite eslint configurations
 
 ```
 $ npm i --save-dev typescript
+$ npm i --save-dev eslint
 $ npm i --save-dev @typescript-eslint/parser
 $ npm i --save-dev @typescript-eslint/eslint-plugin
 $ npm i --save-dev eslint-plugin-gb

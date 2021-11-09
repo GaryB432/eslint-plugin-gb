@@ -15,7 +15,12 @@
     "url": "https://github.com/garyb432/eslint-plugin-gb.git",
     "directory": "packages/eslint-plugin-gb"
   },
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "typescript"
+  ],
   "license": "ISC",
   "main": "lib/index.js",
   "scripts": {
