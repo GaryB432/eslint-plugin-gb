@@ -1,0 +1,4 @@
+coverage/
+junit.xml
+node_modules/
+packages/*/lib/
