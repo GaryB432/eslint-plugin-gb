@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-gb",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "eslint-plugin-gb",
   "private": false,
   "devDependencies": {
@@ -23,5 +23,6 @@
     "build": "tsc --pretty",
     "prepare": "npm run build"
   },
-  "typings": "lib/index.d.ts"
+  "typings": "lib/index.d.ts",
+  "gitHead": "1af71c53512f8f249cc166b46613739440654268"
 }
