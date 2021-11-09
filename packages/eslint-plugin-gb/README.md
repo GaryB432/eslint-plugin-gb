@@ -7,7 +7,10 @@ My favorite eslint configurations
 ## Installation
 
 ```
-$ npm i --save-dev typescript @typescript-eslint/parser eslint-plugin-gb
+$ npm i --save-dev typescript
+$ npm i --save-dev @typescript-eslint/parser
+$ npm i --save-dev @typescript-eslint/eslint-plugin
+$ npm i --save-dev eslint-plugin-gb
 ```
 
 ## Usage
@@ -16,7 +19,6 @@ $ npm i --save-dev typescript @typescript-eslint/parser eslint-plugin-gb
 // .eslintrc.js
 
 module.exports = {
-  parser: '@typescript-eslint/parser',
   plugins: ['gb'],
   extends: ["plugin:gb/recommended"],
 };
