@@ -16,7 +16,7 @@ module.exports = {
       extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
       rules: {
         '@typescript-eslint/explicit-member-accessibility': 'warn',
-        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'warn',
         '@typescript-eslint/member-ordering': [
           'warn',
           {
@@ -26,6 +26,7 @@ module.exports = {
             },
           },
         ],
+        '@typescript-eslint/no-unused-vars': 'off',
       },
     },
     recommended: {
