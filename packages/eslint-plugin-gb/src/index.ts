@@ -27,6 +27,7 @@ module.exports = {
           },
         ],
         '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-floating-promises': 'warn',
       },
     },
     recommended: {
@@ -36,6 +37,9 @@ module.exports = {
     'recommended-with-type-checking': {
       plugins: ['gb'],
       extends: ['plugin:gb/recommended'],
+      rules: {
+        '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
+      },
     },
     all: {
       env: {
@@ -72,7 +76,6 @@ module.exports = {
             },
           },
         ],
-        '@typescript-eslint/unbound-method': 'error',
       },
     },
   },
