@@ -27,19 +27,19 @@ module.exports = {
 
 ## `recommended` config
 
-| Rule | Setting |
-| --- | --- |
-| [@typescript-eslint/explicit-member-accessibility](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md) | warn |
-| [@typescript-eslint/explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md) | warn |
-| [@typescript-eslint/member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md) | warn (with alphabetical ordering) |
-| [@typescript-eslint/no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-floating-promises.md) | warn |
-| [@typescript-eslint/no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md) | off |
-
+| Rule                                                                                                                      | Setting                           |
+| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| [@typescript-eslint/consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports)                  | warn                              |
+| [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility.md)   | warn                              |
+| [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types.md) | warn                              |
+| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering.md)                               | warn (with alphabetical ordering) |
+| [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises.md)                     | warn                              |
+| [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars.md)                                 | off                               |
 
 ## `recommended-with-type-checking` config
 
 all of the `recommended` rules and also the following.
 
-| Rule | Setting |
-| --- | --- |
-| [@typescript-eslint/unbound-method](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unbound-method.md) | error |
+| Rule                                                                                                                                                        | Setting |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [@typescript-eslint/unbound-method](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unbound-method.md) | error   |

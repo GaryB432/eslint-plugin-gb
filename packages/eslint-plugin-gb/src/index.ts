@@ -26,7 +26,7 @@ module.exports = {
             },
           },
         ],
-        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/consistent-type-imports': 'warn',
         '@typescript-eslint/no-floating-promises': 'warn',
       },
     },
