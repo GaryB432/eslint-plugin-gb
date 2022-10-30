@@ -40,6 +40,6 @@ module.exports = {
 
 all of the `recommended` rules and also the following.
 
-| Rule                                                                                                                                                        | Setting |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| [@typescript-eslint/unbound-method](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unbound-method.md) | error   |
+| Rule                                                                                      | Setting |
+| ----------------------------------------------------------------------------------------- | ------- |
+| [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method.md) | error   |

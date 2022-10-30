@@ -17,6 +17,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/explicit-member-accessibility': 'warn',
         '@typescript-eslint/explicit-module-boundary-types': 'warn',
+        '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/member-ordering': [
           'warn',
           {
