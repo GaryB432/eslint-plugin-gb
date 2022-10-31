@@ -25,5 +25,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install -g lerna
+      - run: npm install eslint-plugin-gb@latest -D
       - run: lerna bootstrap --hoist
       - run: npm test -- --verbose
