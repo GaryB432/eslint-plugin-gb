@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-gb",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "eslint-plugin-gb",
   "private": false,
   "devDependencies": {
