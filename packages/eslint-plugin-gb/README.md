@@ -27,19 +27,19 @@ module.exports = {
 
 ## `recommended` config
 
-| Rule                                                                                                                      | Setting                           |
-| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
-| [@typescript-eslint/consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports)                  | warn                              |
-| [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility.md)   | warn                              |
-| [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types.md) | warn                              |
-| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering.md)                               | warn (with alphabetical ordering) |
-| [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises.md)                     | warn                              |
-| [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars.md)                                 | off                               |
+| Rule                                                                                                                    | Setting                           |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| [@typescript-eslint/consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports)                | warn                              |
+| [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility/)   | warn                              |
+| [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types/) | warn                              |
+| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering/)                               | warn (with alphabetical ordering) |
+| [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/)                                 | off                               |
 
 ## `recommended-with-type-checking` config
 
 all of the `recommended` rules and also the following.
 
-| Rule                                                                                      | Setting |
-| ----------------------------------------------------------------------------------------- | ------- |
-| [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method.md) | error   |
+| Rule                                                                                                | Setting |
+| --------------------------------------------------------------------------------------------------- | ------- |
+| [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises/) | warn    |
+| [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method/)             | error   |
