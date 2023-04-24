@@ -28,7 +28,6 @@ module.exports = {
           },
         ],
         '@typescript-eslint/consistent-type-imports': 'warn',
-        '@typescript-eslint/no-floating-promises': 'warn',
       },
     },
     recommended: {
@@ -40,6 +39,7 @@ module.exports = {
       extends: ['plugin:gb/recommended'],
       rules: {
         '@typescript-eslint/unbound-method': ['error', { ignoreStatic: true }],
+        '@typescript-eslint/no-floating-promises': 'warn',
       },
     },
     all: {
