@@ -1,10 +1,14 @@
 # eslint-plugin-gb
 
+# TODO delete xpackages before merge
+
 ## Description
 
 My favorite eslint configurations
 
 ## Installation
+
+# TODO ensure these steps are correct for v2
 
 ```
 $ npm i --save-dev typescript

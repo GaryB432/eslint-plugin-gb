@@ -1,10 +1,3 @@
-// const orderingRule =
-//   require('@typescript-eslint/eslint-plugin/dist/rules/member-ordering') as {
-//     defaultOrder: unknown;
-//   };
-
-// module.exports = {};
-
 const defaultOrder: string[] = [
   // Index signature
   'signature',
