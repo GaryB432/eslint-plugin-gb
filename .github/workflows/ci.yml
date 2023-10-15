@@ -1,4 +1,4 @@
-name: Lerna CI
+name: Nx CI
 on:
   push:
     branches:
@@ -12,18 +12,17 @@ on:
       - 'test/*'
 jobs:
   test:
-    runs-on: ubuntu-latest
-    name: Use Node.js ${{ matrix.node-version }}
     strategy:
       matrix:
-        node-version: [12, 14, 16]
-
+        os: [ubuntu-latest, windows-latest]
+        node-version: [14, 16, 18]
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
-      - name: bootstrap ${{ matrix.node-version }}
+      - uses: actions/checkout@v4
+      - name: Use Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install eslint-plugin-gb@latest -D
-      - run: npx lerna bootstrap --hoist
-      - run: npm test -- --verbose
+      - run: npm ci
+      - run: npx nx run-many --targets test lint build --verbose --output-style=static --configuration=ci --graph=tmp/github-ci.json --nxBail
+      - run: cat tmp/github-ci.json
