@@ -7,6 +7,7 @@
     "test": "nx test"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -16,7 +17,6 @@
     "@nx/vite": "16.10.0",
     "@nx/workspace": "16.10.0",
     "@types/node": "18.7.1",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@vitest/coverage-c8": "~0.32.0",
     "@vitest/ui": "~0.32.0",
