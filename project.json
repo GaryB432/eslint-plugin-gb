@@ -20,14 +20,6 @@
       "options": {
         "lintFilePatterns": ["./**/*.ts", "./package.json"]
       }
-    },
-    "test": {
-      "executor": "@nx/vite:test",
-      "outputs": ["{options.reportsDirectory}"],
-      "options": {
-        "passWithNoTests": true,
-        "reportsDirectory": "coverage/eslint-plugin-gb"
-      }
     }
   },
   "tags": []

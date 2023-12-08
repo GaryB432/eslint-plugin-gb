@@ -1,7 +1,7 @@
 import memberOrder from './member-order';
-import { defaultOrder } from '@typescript-eslint/eslint-plugin/dist/rules/member-ordering';
 
-console.log(defaultOrder, 'TODO remove');
+// import * as asdf from '@typescript-eslint/eslint-plugin/dist/rules/'
+import { TSESLint } from '@typescript-eslint/utils';
 
 module.exports = {
   configs: {

@@ -1,11 +1,7 @@
 {
   "name": "eslint-plugin-gb",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.5",
   "license": "MIT",
-  "scripts": {
-    "build": "nx build",
-    "test": "nx test"
-  },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "tslib": "^2.3.0"
