@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-gb",
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.9.1",

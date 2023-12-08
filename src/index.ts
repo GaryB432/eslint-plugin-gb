@@ -1,8 +1,5 @@
 import memberOrder from './member-order';
 
-// import * as asdf from '@typescript-eslint/eslint-plugin/dist/rules/'
-import { TSESLint } from '@typescript-eslint/utils';
-
 module.exports = {
   configs: {
     base: {
