@@ -7,11 +7,7 @@ My favorite eslint configurations
 ## Installation
 
 ```
-$ npm i --save-dev typescript
-$ npm i --save-dev eslint
-$ npm i --save-dev @typescript-eslint/parser
-$ npm i --save-dev @typescript-eslint/eslint-plugin
-$ npm i --save-dev eslint-plugin-gb
+$ npm add typescript eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-gb -D
 ```
 
 ## Usage
@@ -35,7 +31,7 @@ module.exports = {
 | [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering/)                               | warn (with alphabetical ordering) |
 | [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/)                                 | off                               |
 
-## `recommended-with-type-checking` config
+## `recommended-type-checked` config
 
 all of the `recommended` rules and also the following.
 
