@@ -1,9 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
-const orderingRule =
-  require('@typescript-eslint/eslint-plugin/dist/rules/member-ordering') as {
-    defaultOrder: unknown;
-  };
+import memberOrder from './member-order';
 
 module.exports = {
   configs: {
@@ -22,7 +17,7 @@ module.exports = {
           'warn',
           {
             default: {
-              memberTypes: orderingRule.defaultOrder,
+              memberTypes: memberOrder,
               order: 'alphabetically',
             },
           },
@@ -34,7 +29,7 @@ module.exports = {
       plugins: ['gb'],
       extends: ['plugin:gb/base'],
     },
-    'recommended-with-type-checking': {
+    'recommended-type-checked': {
       plugins: ['gb'],
       extends: ['plugin:gb/recommended'],
       rules: {
@@ -52,7 +47,8 @@ module.exports = {
       extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:@typescript-eslint/recommended-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
         'plugin:prettier/recommended',
       ],
       overrides: [
@@ -72,7 +68,7 @@ module.exports = {
           'warn',
           {
             default: {
-              memberTypes: orderingRule.defaultOrder,
+              memberTypes: memberOrder,
               order: 'alphabetically',
             },
           },

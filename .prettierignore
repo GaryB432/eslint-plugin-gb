@@ -1,2 +1,5 @@
-**/lib
-**/package*.json
+# Add files here to ignore them from prettier formatting
+/tmp
+/dist
+/coverage
+/.nx/cache
