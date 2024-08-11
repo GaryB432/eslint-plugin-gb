@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-gb",
+  "version": "9.0.0",
+  "description": "Eslint rules I like",
+  "main": "index.js",
+  "dependencies": {
+    "globals": "^15.9.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaryB432/eslint-plugin-gb.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin"
+  ],
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaryB432/eslint-plugin-gb/issues"
+  },
+  "homepage": "https://github.com/GaryB432/eslint-plugin-gb#readme"
+}
