@@ -13,15 +13,18 @@
     "type": "git",
     "url": "git+https://github.com/GaryB432/eslint-plugin-gb.git"
   },
+  "type": "module",
   "keywords": [
     "eslint",
     "eslint-plugin",
     "eslintplugin"
   ],
-  "type": "module",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GaryB432/eslint-plugin-gb/issues"
   },
-  "homepage": "https://github.com/GaryB432/eslint-plugin-gb#readme"
+  "homepage": "https://github.com/GaryB432/eslint-plugin-gb#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
