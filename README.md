@@ -6,12 +6,12 @@ My favorite eslint configurations for [ESLint >=9](https://eslint.org/docs/lates
 
 ## Installation
 
-```
-$ npm add --save-dev typescript 
-$ npm add --save-dev eslint
-$ npm add --save-dev @typescript-eslint/parser
-$ npm add --save-dev @typescript-eslint/eslint-plugin
-$ npm add --save-dev eslint-plugin-gb
+```shell
+npm add --save-dev typescript 
+npm add --save-dev eslint
+npm add --save-dev @typescript-eslint/parser
+npm add --save-dev @typescript-eslint/eslint-plugin
+npm add --save-dev eslint-plugin-gb
 
 ```
 
