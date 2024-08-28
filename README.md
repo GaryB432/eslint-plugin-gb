@@ -15,8 +15,6 @@ $ npm add typescript eslint @typescript-eslint/parser @typescript-eslint/eslint-
 
 see [Configuration Files - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/configure/configuration-files) for detailed information. For the basics add the `eslint.config.mjs` to the root of your project.
 
-
-
 ```mjs
 // eslint.config.mjs
 import js from "@eslint/js";
@@ -30,7 +28,6 @@ export default [
   ...ts.configs.recommended,
   ...gb.configs["flat/recommended"],
 ];
-
 ```
 
 ## `recommended` config
@@ -54,9 +51,13 @@ all of the `recommended` rules and also the following.
 | [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises/) | warn |
 | [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method/)  | error |
 
+## development
+
+This is a bare-bones library. There are no npm scripts or monorepo plugins. `npx prettier . -w` works ok.
+
 ## eslint-plugin-gb & eslint Compatibility Chart
 
 | eslint-plugin-gb version | eslint version |
-| --- | --- |
-| ^9.0.0 | >=9.0.0  |
-| ^2.0.0 | <9.0.0 |
+| ------------------------ | -------------- |
+| ^9.0.0                   | >=9.0.0        |
+| ^2.0.0                   | <9.0.0         |
