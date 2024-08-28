@@ -3,9 +3,6 @@
   "version": "9.0.0-alpha.1",
   "description": "Eslint rules I like",
   "main": "index.js",
-  "dependencies": {
-    "globals": "^15.9.0"
-  },
   "peerDependencies": {
     "eslint": "^9.9.0"
   },
@@ -26,5 +23,10 @@
   "homepage": "https://github.com/GaryB432/eslint-plugin-gb#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
   }
 }
