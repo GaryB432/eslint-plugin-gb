@@ -2,12 +2,16 @@
 
 ## Description
 
-My favorite eslint configurations for [ESLint >=9](https://eslint.org/docs/latest/use/migrate-to-9.0.0). An [earlier version] for earlier ESLint releases in available on [eslint-plugin-gb@2](https://www.npmjs.com/package/eslint-plugin-gb/v/2.0.0).
+My favorite eslint configurations for [ESLint >=9](https://eslint.org/docs/latest/use/migrate-to-9.0.0). A version for earlier ESLint releases in available on [eslint-plugin-gb@2](https://www.npmjs.com/package/eslint-plugin-gb/v/2.0.0).
 
 ## Installation
 
 ```
-$ npm add typescript eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-gb -D
+$ npm add --save-dev typescript 
+$ npm add --save-dev eslint
+$ npm add --save-dev @typescript-eslint/parser
+$ npm add --save-dev @typescript-eslint/eslint-plugin
+$ npm add --save-dev eslint-plugin-gb
 
 ```
 

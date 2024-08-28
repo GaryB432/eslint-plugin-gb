@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-gb",
-  "version": "9.0.0-alpha.1",
-  "description": "Eslint rules I like",
+  "version": "9.0.0-alpha.3",
+  "description": "ESLint rules I like",
   "main": "index.js",
   "peerDependencies": {
     "eslint": "^9.9.0"
