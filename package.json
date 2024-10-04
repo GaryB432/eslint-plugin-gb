@@ -3,6 +3,9 @@
   "version": "9.1.0-0",
   "description": "ESLint rules I like",
   "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
   "peerDependencies": {
     "eslint": "^9.9.0"
   },
