@@ -1,8 +1,7 @@
-const fs = require("fs");
 const flatBase = require("./configs/flat/base.js");
 const flatRecommended = require("./configs/flat/recommended.js");
 
-const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"));
+const pkg = require("./package.json");
 
 const plugin = {
   meta: {
