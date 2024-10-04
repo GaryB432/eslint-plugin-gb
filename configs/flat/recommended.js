@@ -1,3 +1,6 @@
-const base = require("./base.js");
+const basePlugins = require("./base.js");
 
-module.exports = [...base];
+module.exports = basePlugins.map((p) => ({
+  ...p,
+  name: "gb/recommended/rules",
+}));
