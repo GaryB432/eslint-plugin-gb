@@ -1,10 +1,8 @@
-import fs from "fs";
-import flatBase from "./configs/flat/base.js";
-import flatRecommended from "./configs/flat/recommended.js";
+const fs = require("fs");
+const flatBase = require("./configs/flat/base.js");
+const flatRecommended = require("./configs/flat/recommended.js");
 
-const pkg = JSON.parse(
-  fs.readFileSync(new URL("./package.json", import.meta.url), "utf8")
-);
+const pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 
 const plugin = {
   meta: {
