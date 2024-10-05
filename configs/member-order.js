@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   // Index signature
   "signature",
   "call-signature",

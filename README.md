@@ -7,7 +7,7 @@ My favorite eslint configurations for [ESLint >=9](https://eslint.org/docs/lates
 ## Installation
 
 ```shell
-npm add --save-dev typescript 
+npm add --save-dev typescript
 npm add --save-dev eslint
 npm add --save-dev @typescript-eslint/parser
 npm add --save-dev @typescript-eslint/eslint-plugin
@@ -17,7 +17,23 @@ npm add --save-dev eslint-plugin-gb
 
 ## Usage
 
-see [Configuration Files - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/configure/configuration-files) for detailed information. For the basics add the `eslint.config.mjs` to the root of your project.
+see [Configuration Files - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/configure/configuration-files) for detailed information. For the basics add the `eslint.config.js` to the root of your project.
+
+```cjs
+// eslint.config.cjs
+const js = require('@eslint/js');
+const gb = require('eslint-plugin-gb');
+
+module.exports = [
+  ...js.configs.recommended,
+  ...gb.configs['flat/recommended'],
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    // Override or add rules here
+    rules: {},
+  },
+];
+```
 
 ```mjs
 // eslint.config.mjs

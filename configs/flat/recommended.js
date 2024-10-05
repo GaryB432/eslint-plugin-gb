@@ -1,3 +1,6 @@
-import base from "./base.js";
+const basePlugins = require("./base.js");
 
-export default [...base];
+module.exports = basePlugins.map((p) => ({
+  ...p,
+  name: "gb/recommended/rules",
+}));

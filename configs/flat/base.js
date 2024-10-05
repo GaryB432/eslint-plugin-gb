@@ -1,6 +1,6 @@
-import memberOrder from "../member-order.js";
+const memberOrder = require("../member-order.js");
 
-export default [
+module.exports = [
   {
     name: "gb/base/rules",
     rules: {

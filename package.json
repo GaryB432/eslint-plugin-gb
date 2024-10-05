@@ -1,8 +1,12 @@
 {
   "name": "eslint-plugin-gb",
-  "version": "9.0.0",
+  "version": "9.1.0",
   "description": "ESLint rules I like",
   "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "npx jest"
+  },
   "peerDependencies": {
     "eslint": "^9.9.0"
   },
@@ -10,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/GaryB432/eslint-plugin-gb.git"
   },
-  "type": "module",
+  "type": "commonjs",
   "keywords": [
     "eslint",
     "eslint-plugin",
