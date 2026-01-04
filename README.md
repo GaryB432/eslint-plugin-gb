@@ -17,18 +17,18 @@ npm add --save-dev eslint-plugin-gb
 
 ## Usage
 
-see [Configuration Files - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/configure/configuration-files) for detailed information. For the basics add the `eslint.config.js` to the root of your project.
+see [Configuration Files - ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/latest/use/configure/configuration-files) for detailed information. For the basics add the `eslint.config.*js` to the root of your project.
 
 ```cjs
 // eslint.config.cjs
-const js = require('@eslint/js');
-const gb = require('eslint-plugin-gb');
+const js = require("@eslint/js");
+const gb = require("eslint-plugin-gb");
 
 module.exports = [
   ...js.configs.recommended,
-  ...gb.configs['flat/recommended'],
+  ...gb.configs["recommended"],
   {
-    files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
     // Override or add rules here
     rules: {},
   },
@@ -38,16 +38,20 @@ module.exports = [
 ```mjs
 // eslint.config.mjs
 import js from "@eslint/js";
-import ts from "typescript-eslint";
 import gb from "eslint-plugin-gb";
-import globals from "globals";
+import tseslint from "typescript-eslint";
+import { defineConfig } from "eslint/config";
 
-/** @type {import('eslint').Linter.Config[]} */
-export default [
-  js.configs.recommended,
-  ...ts.configs.recommended,
-  ...gb.configs["flat/recommended"],
-];
+export default defineConfig([
+  tseslint.configs.recommended,
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
+    plugins: { js, gb },
+    extends: ["js/recommended", "gb/recommended"],
+    // Override or add rules here
+    rules: {},
+  },
+]);
 ```
 
 ## `recommended` config
@@ -58,18 +62,8 @@ export default [
 | [@typescript-eslint/consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports) | warn |
 | [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility/) | warn |
 | [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types/) | warn |
-| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering/) | warn (with alphabetical ordering and [strict rules](./configs/member-order.js).) |
+| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering/) | warn (with alphabetical ordering and [strict rules](./lib/member-order.js).) |
 | [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/) | off |
-
-## `recommended-type-checked` config
-
-all of the `recommended` rules and also the following.
-
-<!-- prettier-ignore -->
-| Rule  | Setting |
-| --- | --- |
-| [@typescript-eslint/no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises/) | warn |
-| [@typescript-eslint/unbound-method](https://typescript-eslint.io/rules/unbound-method/)  | error |
 
 ## development
 
@@ -79,5 +73,5 @@ This is a bare-bones library. There are no npm scripts or monorepo plugins. `npx
 
 | eslint-plugin-gb version | eslint version |
 | ------------------------ | -------------- |
-| ^9.0.0                   | >=9.0.0        |
+| ^9.2.0                   | >=9.9.0        |
 | ^2.0.0                   | <9.0.0         |
