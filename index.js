@@ -1,42 +1,24 @@
-const flatBase = require("./configs/flat/base.js");
-const flatRecommended = require("./configs/flat/recommended.js");
+// @ts-check
+import { readFileSync } from "fs";
+import { base } from "./configs/base.js";
+import { recommended } from "./configs/recommended.js";
+import { ESLint } from "eslint";
 
-const pkg = require("./package.json");
+const pkg = JSON.parse(
+  readFileSync(new URL("./package.json", import.meta.url), "utf8"),
+);
 
+/** @type {ESLint.Plugin} */
 const plugin = {
   meta: {
     name: pkg.name,
     version: pkg.version,
+    namespace: "gb",
   },
   configs: {
-    "flat/base": flatBase,
-    "flat/recommended": flatRecommended,
+    base,
+    recommended,
   },
-  rules: {},
-  processors: {},
 };
 
-// Object.assign(plugin.configs, {
-//   recommended: [
-//     {
-//       plugins: {
-//         gb: plugin,
-//       },
-//       rules: {
-//         "example/dollar-sign": "error",
-//       },
-//       languageOptions: {
-//         globals: {
-//           myGlobal: "readonly",
-//         },
-//         parserOptions: {
-//           ecmaFeatures: {
-//             jsx: true,
-//           },
-//         },
-//       },
-//     },
-//   ],
-// });
-
-module.exports = plugin;
+export default plugin;
