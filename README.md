@@ -62,7 +62,7 @@ export default defineConfig([
 | [@typescript-eslint/consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports) | warn |
 | [@typescript-eslint/explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility/) | warn |
 | [@typescript-eslint/explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types/) | warn |
-| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering/) | warn (with alphabetical ordering and [strict rules](./lib/member-order.js).) |
+| [@typescript-eslint/member-ordering](https://typescript-eslint.io/rules/member-ordering/#options) | warn (with alphabetical ordering and [strict rules](./lib/member-order.js).) |
 | [@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/) | off |
 
 ## development
