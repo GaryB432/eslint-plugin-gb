@@ -1,8 +1,6 @@
-import { ESLint } from "eslint";
-import memberOrder from "../member-order.js";
+import { memberOrder } from "../lib/member-order.js";
 import { base } from "./base.js";
 
-/** @type {ESLint.ConfigData} */
 export const recommended = {
   ...base,
   rules: {
