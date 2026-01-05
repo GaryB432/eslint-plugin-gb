@@ -1,15 +1,13 @@
-declare const flatBase: any;
-declare const flatRecommended: any;
-declare const pkg: any;
-declare const plugin: {
-  meta: {
-    name: string;
-    version: string;
+import type { Linter } from "eslint";
+
+export declare const gb: {
+  readonly meta: {
+    readonly name: string;
+    readonly version: string;
+    readonly namespace: "gb";
   };
-  configs: {
-    "flat/base": any;
-    "flat/recommended": any;
+  readonly configs: {
+    readonly recommended: { readonly rules: Readonly<Linter.RulesRecord> };
+    readonly base: { readonly rules: Readonly<Linter.RulesRecord> };
   };
-  rules: {};
-  processors: {};
 };
